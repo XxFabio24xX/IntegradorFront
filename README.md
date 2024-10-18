@@ -10,7 +10,7 @@ https://integrador-front-jet.vercel.app/
 
 ## Video de prueba
 
-https://youtu.be/NUoNsVmzwnY
+https://youtu.be/SKl7csJsLuU
 
 ## Tecnologías Utilizadas
 
