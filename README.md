@@ -12,7 +12,7 @@ https://integrador-front-jet.vercel.app/
 
 ## Video de prueba
 
-https://www.youtube.com/
+https://youtu.be/NUoNsVmzwnY
 
 
 
