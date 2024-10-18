@@ -11,7 +11,7 @@ export const handleGetProductsToStore = () => {
 
 export const handleRenderList = (productosIn) => {
     // Agrupar productos por categoría automáticamente
-    const categorias = ["Zapatillas", "Remeras", "Buzos"];
+    const categorias = ["Hamburguesas", "Papas", "Bebidas"];
     const groupedProducts = categorias.map(categoria => {
         return {
             categoria,
@@ -46,29 +46,25 @@ export const handleRenderList = (productosIn) => {
                 </div>
             </section>`;
         }
-        return ''; // No renderizar si no hay productos
+        return '';
     };
 
-    // Renderizar todas las categorías de una vez
     const appContainer = document.getElementById("storeContainer");
     appContainer.innerHTML = groupedProducts.map(renderProductsGroup).join('');
 
-    // Anade los elementos de forma dinamica
     appContainer.addEventListener('click', (event) => {
         const productElement = event.target.closest('.containerTargetItem');
         if (productElement) {
             const categoria = productElement.getAttribute('data-categoria');
             const index = productElement.getAttribute('data-index');
             
-            // Encuentra los productos de la categoría correspondiente
             const productosCategoria = productosIn.filter(producto => producto.categoria === categoria);
             
-            // Obtén el producto correcto basado en el índice
-            const product = productosCategoria[index];  // Usa el índice dentro de la categoría
+            const product = productosCategoria[index];  
     
             if (product) {
-                setProductoActivo(product);  // Asigna el producto activo
-                openModal();  // Abre el modal
+                setProductoActivo(product);  
+                openModal();
             }
         }
     });

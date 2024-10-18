@@ -176,8 +176,8 @@ body{
 }
 
 .containerTargetItem {
-  background-color: var(--blanco);
-  color: var(--azulOscuro);
+  background-color: var(--negroClaro);
+  color: var(--blanco);
   width: 15vw;
   display: flex;
   flex-direction: column;

@@ -15,9 +15,9 @@ const handleFilterProductsByCategory = (categoryIn) => {
         case "Todo":
             handleRenderList(products);
             break;
-        case "Zapatillas":
-        case "Remeras":
-        case "Buzos":
+        case "Hamburguesas":
+        case "Papas":
+        case "Bebidas":
             const result = products.filter((el) => el.categoria === categoryIn)
             handleRenderList(result)
         default:
@@ -39,9 +39,9 @@ export const renderCategories = () => {
     const ulList = document.getElementById("listFilter");
     ulList.innerHTML = `
     <li id="Todo">Todos los productos</li>
-    <li id="Zapatillas">Zapatillas</li>
-    <li id="Remeras">Remeras</li>
-    <li id="Buzos">Buzos</li>
+    <li id="Hamburguesas">Hamburguesas</li>
+    <li id="Papas">Papas</li>
+    <li id="Bebidas">Bebidas</li>
     <li id="MayorPrecio">Mayor Precio</li>
     <li id="MenorPrecio">Menor Precio</li>
     `;

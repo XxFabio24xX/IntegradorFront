@@ -41,16 +41,16 @@ const handleSaveOrModifyElements = () => {
         };
     }
 
-    setInLocalStorage(object);  // Guardamos en LocalStorage
-    handleGetProductsToStore(); // Actualizamos la lista de productos
+    setInLocalStorage(object);
+    handleGetProductsToStore(); 
     closeModal();
     Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Elemento agregado existosamente",
+        title: "Elemento agregado/modificado existosamente",
         showConfirmButton: false,
         timer: 1500
-      });              // Cerramos el modal
+      });            
 };
 
 //ELIMINAR ELEMENTOS
@@ -69,7 +69,7 @@ export const handleDeleteProducts = () => {
         if (result.isConfirmed) {
             const products = handleGetProductLocalStorage();
             const result = products.filter((el) => el.id !== productoActivo.id)
-            //setear el nuevo array
+            
             localStorage.setItem('products', JSON.stringify(result));
             const newProducts = handleGetProductLocalStorage();
             handleRenderList(newProducts);
