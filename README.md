@@ -8,7 +8,7 @@ Este proyecto es una aplicación web para una empresa que se dedica a la venta d
 
 Link del Vercel:
 
-https://integrador-front-jet.vercel.app/`
+https://integrador-front-jet.vercel.app/
 
 ## Video de prueba
 
