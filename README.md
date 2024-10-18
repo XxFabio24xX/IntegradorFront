@@ -209,5 +209,10 @@ Copiar y pegar el los campos correspondientes o directamente en el value del Loc
 
 ## Autor
 
-- [@FabioEscudero](https://github.com/XxFabio24xX)
+- **Nombre**: Fabio Escudero
+- **Comisión**: 3K10
+- **Materia**: Desarrollo de Software
+- Universidad Técnologica Nacional, Mendoza
+
+- [Link GitHub](https://github.com/XxFabio24xX)
 
